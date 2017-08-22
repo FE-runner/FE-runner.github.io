@@ -10,3 +10,4 @@ selenium-debug.log
 .vscode
 todo.md
 /test/
+/.deploy_git/
