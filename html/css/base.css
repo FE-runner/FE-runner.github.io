@@ -1,0 +1,100 @@
+
+
+/*重设浏览器默认样式,提供原子样式*/
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section{
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft YaHei", sans-serif;
+}
+li {
+  list-style: none;
+}
+
+
+
+/*原子样式*/
+
+.overhide{
+  overflow: hidden;
+  /*非常规清浮动*/
+}
+.clearfix:after{
+  display: block;
+  clear: both;
+  content: '';
+}
+.clearfix{
+  zoom: 1;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.fl,
+.fr{
+  _display: inline;
+  /* 减少浮动带来的 bug */
+}
+.rel{
+  position: relative;
+}
+.abs{
+  position: absolute;
+}
+.fix{
+  position: fixed;
+}
+.el{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /*省略号*/
+}
+.hide{
+  display: none;
+}
+.block{
+  display: block;
+}
+.breakword{
+  word-wrap: break-word;
+}

@@ -1,0 +1,143 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+*
+{
+    font-family: '微软雅黑';
+    font-size: 12px;
+    line-height: 1em;
+
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-weight: normal;
+}
+
+a
+{
+    text-decoration: none;
+
+    color: #333;
+}
+
+a img
+{
+    border: 0;
+}
+
+ul,
+ol,
+dl,
+dt,
+dd
+{
+    margin: 0;
+    padding: 0;
+}
+
+li
+{
+    list-style: none;
+}
+
+i,
+em
+{
+    font-style: normal;
+}
+
+b,
+strong
+{
+    font-weight: normal;
+}
+
+img
+{
+    vertical-align: top;
+    border: 0;
+}
+
+input,
+textarea
+{
+    resize: none;
+
+    outline: none;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+th,
+td
+{
+    padding: 0;
+
+    border: 1px solid #ccc;
+}
+
+.clearfix:after
+{
+    display: block;
+    clear: both;
+
+    content: '';
+}
+
+.clearfix
+{
+    zoom: 1;
+}
+
+.fl
+{
+    float: left;
+}
+
+.fr
+{
+    float: right;
+}
+
+.porel
+{
+    position: relative;
+}
+
+.poabs
+{
+    position: absolute;
+}
+
+.pofix
+{
+    position: fixed;
+}
+
+.ellip
+{
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.border0
+{
+    border-width: 0 !important;
+}
+

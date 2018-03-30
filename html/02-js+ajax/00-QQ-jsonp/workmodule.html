@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="LianyForWeb                                      window.onload = function () {       var oLayer = getEleByClass(document.body, &apos;layer&apos;)[0];       var oLoginWeb = document.getElementById(&apos;lo">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FE-runner&#39;s Blog">
+<meta property="og:url" content="http://yoursite.com/html/02-js+ajax/00-QQ-jsonp/workmodule.html">
+<meta property="og:site_name" content="FE-runner&#39;s Blog">
+<meta property="og:description" content="LianyForWeb                                      window.onload = function () {       var oLayer = getEleByClass(document.body, &apos;layer&apos;)[0];       var oLoginWeb = document.getElementById(&apos;lo">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/html/02-js+ajax/00-QQ-jsonp/img/1.jpg">
+<meta property="og:updated_time" content="2018-03-30T06:37:43.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="FE-runner&#39;s Blog">
+<meta name="twitter:description" content="LianyForWeb                                      window.onload = function () {       var oLayer = getEleByClass(document.body, &apos;layer&apos;)[0];       var oLoginWeb = document.getElementById(&apos;lo">
+<meta name="twitter:image" content="http://yoursite.com/html/02-js+ajax/00-QQ-jsonp/img/1.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":true,"scrollpercent":true,"onmobile":true},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/html/02-js+ajax/00-QQ-jsonp/workmodule.html"/>
+
+
+
+
+
+  <title> | FE-runner's Blog</title>
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-104686277-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">FE-runner's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
+
+	<h1 class="post-title" itemprop="name headline"></h1>
+
+
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+        
+        
+          <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> -->
+  <title>LianyForWeb</title>
+  <meta name="author" content="LianyForWeb">
+  <!--<link rel = "stylesheet" href = "css/base.css">-->
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="04-QQ.css">
+  <style>
+  </style>
+  <script src="../../js/base.js"></script>
+  <script src="04-jsonp.js"></script>
+  <script src="js/cookie.js"></script>
+  <!-- <script src="../00-courseware/JS3/20160617/jsonp4.js"></script> -->
+  <script>
+    window.onload = function () {
+      var oLayer = getEleByClass(document.body, 'layer')[0];
+      var oLoginWeb = document.getElementById('loginWeb');
+      var oLogin = document.getElementById('login');
+      var oRegin = document.getElementById('regin');
+      var oAutoLoginLabel = document.getElementById('autoLoginLabel');
+      var oAutoLogin = document.getElementById('autoLogin');
+      var oUserName = document.getElementById('username');
+      var oPass = document.getElementById('pass');
+      var oHeadImage = document.getElementById('headImage');
+      var oHeadImageBox = getEleByClass(document.body, 'head-image-box')[0];
+      var URL = 'http://zhinengshe.com/exercise/im/api.php';
+      var oChartWeb = document.getElementById('chartWeb');
+      var oChartTop = document.getElementById('chartTop');
+      var oLogout = document.getElementById('logout');
+      var oLoginOut = document.getElementById('logout');
+      var oChartBottom = document.getElementById('chartBottom');
+      var oAllChart = document.getElementById('allChart');
+      var oUserChart = document.getElementById('userChart');
+      var oText = document.getElementById('text');
+      var oSend = document.getElementById('send');
+      var oUserList = document.getElementById('userList');
+      var oUlList = oUserList.getElementsByTagName('ul')[0];
+      var oUlChart = oAllChart.getElementsByTagName('ul')[0];
+      var oUserScroll = document.getElementById('userScroll');
+      var oMsgScroll = document.getElementById('msgScroll');
+      /////////////////////////////////////////////////////////////////////////////////////////
+      var maxID = 0; //获取当前最大ID
+      var timer; //自动更新
+      var arrImg = [1, 2, 3, 4, 5, 6, 7, 8, 9]; //换头像
+      var noAutoToken;
+      /////////////////////////////////////////////////////////////////////////////////////
+
+      //透明层
+      oLayer.style.height = document.body.scrollHeight + 'px';
+      oLayer.style.width = document.body.scrollWidth + 'px';
+      window.onload = window.onscroll = window.onresize = function () {
+        oLayer.style.height = document.body.scrollHeight + 'px';
+        oLayer.style.width = document.body.scrollWidth + 'px';
+      };
+
+      //登录界面的拖拽 drag(oLoginWeb);
+      drag(oLoginWeb);
+
+      drag(oChartWeb);
+
+      //阻止冒泡//若后面出现相同事件需重新设置
+      oLoginOut.onmousedown = oAllChart.onmousedown = oUserChart.onmousedown = oUserList.onmousedown = oHeadImage.onmousedown = oUserName.onmousedown = oPass.onmousedown = oRegin.onmousedown = oLogin.onmousedown = function (ev) {
+        oEvent = ev || event;
+        oEvent.cancelBubble = true;
+      };
+
+      //取消自动登录接口的默认事件和冒泡
+      oAutoLoginLabel.onmousedown = function (ev) {
+        oEvent = ev || event;
+        oEvent.cancelBubble = true;
+        return false;
+      }
+
+      //点击换头像
+      oHeadImage.onmousedown = function (ev) {
+        oEvent = ev || event;
+        oEvent.cancelBubble = true;
+        oHeadImageBox.innerHTML = '';
+        for (var i = 0; i < arrImg.length; i++) {
+          var oImg = document.createElement('img');
+          oImg.src = 'img/' + arrImg[i] + '.jpg';
+          oImg.className = 'head-image';
+          oHeadImageBox.appendChild(oImg);
+        }
+        oHeadImageBox.style.display = 'block';
+        oHeadImage.style.display = 'none';
+        oHeadImageBox.onmouseleave = function () {
+          oHeadImage.style.display = 'block';
+          oHeadImageBox.style.display = 'none';
+        };
+        oHeadImageBox.onmouseup = function () {
+          oHeadImage.style.display = 'block';
+          oHeadImageBox.style.display = 'none';
+        };
+        var aImg = oHeadImageBox.children;
+        for (var i = 0; i < aImg.length; i++) {
+          aImg[i].style.opacity = '0.5';
+          aImg[0].style.opacity = '1';
+          aImg[i].onmouseenter = function () {
+            this.style.opacity = '1';
+            oHeadImage.src = this.src;
+          };
+          aImg[i].onmouseleave = function () {
+            this.style.opacity = '0.5';
+          };
+        }
+        return false;
+      };
+
+      // 自动登录接口
+      autoLogin(getCookie('logined'));
+
+      //注册接口
+      oRegin.onclick = register;
+
+      //登录接口
+      oLogin.onclick = login;
+
+      //消息滚动条效果及停止自动更新
+      oMsgScroll.onmousedown = function (ev) {
+        var oEvent = ev || event;
+        oEvent.cancelBubble = true;
+        clearInterval(timer);
+        // getAllMsg(getCookie('logined'));
+        scroll(oMsgScroll, oUlChart, oEvent);
+        return false;
+      };
+
+      //用户滚动条效果
+      oUserScroll.onmousedown = function (ev) {
+        var oEvent = ev || event;
+        oEvent.cancelBubble = true;
+        // getUserList(getCookie('logined'));
+        scroll(oUserScroll, oUlList, oEvent);
+        return false;
+      };
+
+      //恢复自动更新
+      oMsgScroll.onmouseup = oUserScroll.onmouseup = autoUpdata;
+
+      //消息滚轮事件及停止自动更新
+      addWheel(oAllChart, function (bDown, ev) {
+        oEvent = ev || event;
+        clearInterval(timer);
+        // getAllMsg(getCookie('logined'));
+        if (bDown) {
+//          // console.log(1);
+          scroll2(oMsgScroll, oUlChart, 5);
+        } else {
+//          // console.log(2)
+          scroll2(oMsgScroll, oUlChart, -5);
+        }
+      });
+
+      //用户滚轮事件
+      addWheel(oUserList, function (bDown, ev) {
+        oEvent = ev || event;
+        if (bDown) {
+//          // console.log(1);
+          scroll2(oUserScroll, oUlList, 5);
+        } else {
+//          // console.log(2);
+          scroll2(oUserScroll, oUlList, -5);
+        }
+      });
+      //////////////////////////////////////////////////////////////////////////////////
+      //注册
+      function register() {
+        if (oUserName.value === '' || oPass.value === '') {
+          alert('账号或密码不能为空');
+        } else {
+          jsonp({
+            url: URL, data: {
+              a: 'reg', user: oUserName.value, pass: oPass.value, face: oHeadImage.src.substring(oHeadImage.src.indexOf('.jpg') - 1, oHeadImage.src.indexOf('.jpg'))
+            }, success: function (json) {
+              if (json.err) {
+                alert(json.msg);
+              } else {
+                alert(json.msg);
+                oUserName.value = '';
+                oPass.value = '';
+              }
+            }
+          });
+        }
+      }
+
+      // 自动登录
+      function autoLogin(cookie) {
+        if (cookie) {
+          move(oLoginWeb, {
+            top: -500
+          });
+          move(oChartWeb, {
+            left: 50
+          });
+          getUserList(cookie);
+          getAllMsg(cookie);
+          sendMsg(cookie);
+          logout(cookie);
+
+          // 实时更新消息
+          autoUpdata();
+        }
+      }
+
+      //登录
+      function login() {
+        if (oUserName.value === '' || oPass.value === '') {
+          alert('账号或密码不能为空');
+        } else {
+          jsonp({
+            url: URL, data: {
+              a: 'lgn', user: oUserName.value, pass: oPass.value
+            }, success: function (json) {
+              if (json.err) {
+                alert(json.msg);
+              } else {
+//                console.log(json);
+                move(oLoginWeb, {
+                  top: -500
+                });
+                move(oChartWeb, {
+                  left: 50
+                });
+                oUserName.value = '';
+                oPass.value = '';
+                //设置缓存
+                if (oAutoLogin.checked) {
+                  addCookie('logined', json.token, 999);
+                }
+                // 调用各种函数
+                noAutoToken = json.token;
+//                console.log(noAutoToken);
+                getUserList(noAutoToken);
+                getAllMsg(noAutoToken);
+                sendMsg(noAutoToken);
+                logout(noAutoToken);
+                // 实时更新消息
+                autoUpdata();
+              }
+            }
+          });
+        }
+      }
+
+      //获取用户列表
+      function getUserList(token) {
+        jsonp({
+          url: URL, data: {
+            a: 'get_user_list', token: token
+          }, success: function (json) {
+            if (json.err) {
+              alert(json.msg);
+            } else {
+//              // console.log(json);
+              oUlList.innerHTML = '';
+              var arr = json.data;
+              for (var i = 0; i < arr.length; i++) {
+                var oLi = document.createElement('li');
+                oLi.className = 'rel';
+                oLi.innerHTML = ' <img src="img/' + arr[i].face + '.jpg" ><span class="abs">' + arr[i].username + '</span>';
+                oUlList.appendChild(oLi);
+              }
+            }
+          }
+        });
+      }
+
+      //获取完整信息
+      function getAllMsg(token) {
+        jsonp({
+          url: URL, data: {
+            a: 'get_msg', token: token
+          }, success: function (json) {
+            if (json.err) {
+              alert(json.msg);
+            } else {
+//              // console.log(json);
+              var arr = json.data;
+              for (var i = 0; i < arr.length; i++) {
+                var oDate = new Date(arr[i].post_time * 1000);
+                var sDate = oDate.getFullYear() + '-' + toDouble(oDate.getMonth() + 1) + '-' + toDouble(oDate.getDate()) + ' ' + toDouble(oDate.getHours()) + ':' + toDouble(oDate.getMinutes()) + ':' + toDouble(oDate.getSeconds());
+
+                var oLi = document.createElement('li');
+                oLi.className = 'rel';
+                oLi.innerHTML = ' <img src="img/' + arr[i].face + '.jpg " class="abs"> <span class=" chart-text1">' + arr[i].username + '</span><span class=" chart-text2">' + sDate + '</span> <br> <p class="chart-text3">' + arr[i].content + '</p>';
+                oUlChart.appendChild(oLi);
+                oUlChart.style.top = '';
+                oUlChart.style.bottom = 0;
+                oMsgScroll.style.top = oMsgScroll.parentNode.offsetHeight - oMsgScroll.offsetHeight + 'px';
+                // 更新ID
+                if (maxID < arr[i].ID) {
+                  maxID = arr[i].ID;
+                }
+              }
+            }
+
+          }
+        });
+      }
+
+      //获取更新信息
+      function getUpdata(token) {
+        jsonp({
+          url: URL, data: {
+            a: 'get_msg_n', n: maxID, token: token
+          }, success: function (json) {
+            if (json.err) {
+              alert(json.msg);
+            } else {
+//              console.log(json);
+              var arr = json.data;
+              for (var i = 0; i < arr.length; i++) {
+                var oDate = new Date(arr[i].post_time * 1000);
+                var sDate = oDate.getFullYear() + '-' + toDouble(oDate.getMonth() + 1) + '-' + toDouble(oDate.getDate()) + ' ' + toDouble(oDate.getHours()) + ':' + toDouble(oDate.getMinutes()) + ':' + toDouble(oDate.getSeconds());
+                var oLi = document.createElement('li');
+                oLi.className = 'rel';
+                oLi.innerHTML = ' <img src="img/' + arr[i].face + '.jpg " class="abs"> <span class=" chart-text1">' + arr[i].username + '</span><span class=" chart-text2">' + sDate + '</span> <br> <p class="chart-text3">' + arr[i].content + '</p>';
+                oUlChart.appendChild(oLi);
+                oUlChart.style.top = '';
+                oUlChart.style.bottom = 0;
+                oMsgScroll.style.top = oMsgScroll.parentNode.offsetHeight - oMsgScroll.offsetHeight + 'px';
+
+                if (maxID < arr[i].ID) {
+                  maxID = arr[i].ID;
+                }
+              }
+            }
+          }
+        });
+      }
+
+      //自动更新事件
+      function autoUpdata() {
+        if (getCookie('logined')) {
+          getUpdata(getCookie('logined'));
+          // return false;
+        }
+        if (noAutoToken) {
+          getUpdata(noAutoToken);
+          // return false;
+        }
+        timer = setInterval(function () {
+          // getUpdata(getCookie('logined')) || getUpdata(noAutoToken);
+          // getCookie('logined') && getUpdata(getCookie('logined'));
+          if (getCookie('logined')) {
+            getUpdata(getCookie('logined'));
+            // return false;
+          }
+          if (noAutoToken) {
+            getUpdata(noAutoToken);
+            // return false;
+          }
+        }, 2000);
+      }
+
+      //发送信息
+      function sendMsg(token) {
+        oSend.onclick = function () {
+          jsonp({
+            url: URL, data: {
+              a: 'snd_msg', content: oText.value, token: token
+            }, success: function (json) {
+              if (json.err) {
+                alert(json.msg);
+              } else {
+//                console.log(json);
+                var oDate = new Date(json.time * 1000);
+                var sDate = oDate.getFullYear() + '-' + toDouble(oDate.getMonth() + 1) + '-' + toDouble(oDate.getDate()) + ' ' + toDouble(oDate.getHours()) + ':' + toDouble(oDate.getMinutes()) + ':' + toDouble(oDate.getSeconds());
+                var oLi = document.createElement('li');
+                oLi.className = 'rel';
+                // 此处有bug,后台返回的数据不足以让用户做到无缝显示自己的发言//可以不写,直接后台更新//后台更新不出来???
+                oLi.innerHTML = ' <img src="img/' + 1 + '.jpg " class="abs"> <span class=" chart-text1">' + 'qq' + '</span><span class=" chart-text2">' + sDate + '</span> <br> <p class="chart-text3">' + oText.value + '</p>';
+                oUlChart.appendChild(oLi);
+                oText.value = '';
+                oText.focus();
+                oUlChart.style.top = '';
+                oUlChart.style.bottom = 0;
+                oMsgScroll.style.top = oMsgScroll.parentNode.offsetHeight - oMsgScroll.offsetHeight + 'px';
+                // 更新ID
+                if (maxID < json.ID) {
+                  maxID = json.ID;
+
+                }
+                // autoUpdata();
+
+              }
+            }
+          });
+        }
+      }
+
+      // 退出登录
+      function logout(token) {
+        oLogout.onclick = function () {
+          jsonp({
+            url: URL, data: {
+              a: 'logout', token: token
+            }, success: function (json) {
+              if (json.err) {
+                alert('退出登录失败');
+              } else {
+                alert(json.msg);
+                removeCookie('logined');
+                move(oLoginWeb, {
+                  top: 50
+                });
+                move(oChartWeb, {
+                  left: -2000
+                });
+                oUlChart.innerHTML = '';
+                oUlList.innerHTML = '';
+                oUserName.value = '';
+                oPass.value = '';
+                oText.value = '';
+                clearInterval(timer);
+              }
+            }
+          });
+        }
+      }
+
+      // 拖拽
+      function drag(obj) {
+        obj.onmousedown = function (ev) {
+          var oEvent = ev || event;
+          var disX = oEvent.clientX - getPos(obj).left;
+          var disY = oEvent.clientY - getPos(obj).top;
+          document.onmousemove = function (ev) {
+            var oEvent = ev || event;
+            var l = oEvent.clientX - disX;
+            var t = oEvent.clientY - disY;
+            //限制判断
+            var clientW = document.documentElement.clientWidth;
+            var clientH = document.documentElement.clientHeight;
+            var objW = obj.offsetWidth;
+            var objH = obj.offsetHeight;
+            (l <= 0) && (l = 0);
+            (l >= clientW - objW) && (l = clientW - objW);
+            (t <= 0) && (t = 0);
+            (t >= clientH - objH) && (t = clientH - objH);
+            //终端接口
+            obj.style.left = l + 'px';
+            obj.style.top = t + 'px';
+          };
+          document.onmouseup = function () { //必须写在里面.否则下次父集事件执行时该事件为null//必须使用document,因为在没有限制范围的时候,拖拽出去的话,函数无法执行
+            document.onmousemove = null; //不能是父集事件,父集不能被清
+            document.onmouseup = null; //清掉以优化性能
+            // obj.releaseCapture && obj.releaseCapture(); //事件释放//Chrome不兼容//releaseCapture>属性//releaseCapture()>方法
+          };
+          // obj.setCapture && obj.setCapture(); //事件捕获,解决IE7及以下的侦听事件触发bug//Chrome不兼容
+          return false; //阻止IE8及以上IE和其他浏览器的侦听事件,
+        };
+      }
+
+      // 滚动条
+      function scroll(obj, obj2, oEv) {
+        var disY = oEv.clientY - obj.offsetTop;
+        document.onmousemove = function (ev) {
+          var oEvent = ev || event;
+          var t = oEvent.clientY - disY;
+          t < 0 && (t = 0);
+          t > obj.parentNode.offsetHeight - obj.offsetHeight && (t = obj.parentNode.offsetHeight - obj.offsetHeight);
+          obj.style.top = t + 'px';
+          var scale = (obj.parentNode.offsetHeight - obj.offsetHeight) / (obj2.scrollHeight - obj2.parentNode.offsetHeight);
+          obj2.style.top = -t / scale + 'px';
+        };
+
+        document.onmouseup = function () {
+          document.onmousemove = null;
+          document.onmouseup = null;
+        };
+      }
+
+      // 滚轮事件的回调函数
+      function scroll2(obj, obj2, speed) {
+        var t = obj.offsetTop;
+        (t + speed) < 0 && (t = -speed);
+        (t + speed) > obj.parentNode.offsetHeight - obj.offsetHeight && (t = obj.parentNode.offsetHeight - obj.offsetHeight - speed);
+        obj.style.top = t + speed + 'px';
+        var scale = (obj.parentNode.offsetHeight - obj.offsetHeight) / (obj2.scrollHeight - obj2.parentNode.offsetHeight);
+        obj2.style.top = (-t - speed) / scale + 'px';
+      }
+    };
+  </script>
+</head>
+<body>
+<h1 class="work-title">模拟QQ</h1>
+<p class="work-instruction">可以换头像,注册,登录及自动登录等等,jsonp方式模拟ajax</p>
+<div class="layer"></div>
+<div class="login-web abs " id="loginWeb">
+  <img class="head-image abs" id="headImage" src="img/1.jpg">
+  <div class="head-image-box abs" style="display:none;">
+    <!-- <img src="img/1.jpg" class="head-image"> -->
+  </div>
+  <input type="text" name=" " id="username" placeholder="QQ号码/手机/邮箱 " class="username abs ">
+  <input type="password" name=" " id="pass" placeholder="密码 " class="pass abs ">
+  <label for="autoLogin" class="auto-login-label abs" id="autoLoginLabel">自动登录</label>
+  <input type="checkbox" class="abs  auto-login" id="autoLogin" checked="checked">
+  <a href="javascript:; " class="abs regin " id="regin" target="_blank" rel="external">注册</a>
+  <a href="javascript:; " class="abs login " id="login" target="_blank" rel="external">登录</a>
+</div>
+<div class="chart-web abs  " id="chartWeb">
+  <div class=" chart-top abs " id="chartTop"></div>
+  <div class="chart-logout abs " id="logout">×</div>
+  <div class="all-chart abs " id="allChart">
+    <ul class="abs ">
+      <!--  <li class="rel">
+        <img src="img/' + arr[i].face + '.jpg " class="abs"> <span class=" chart-text1">' + arr[i].username + '</span><span class=" chart-text2">' + arr[i].sDate + '</span>
+        <br>
+        <p class="chart-text3">' + arr[i].content + '</p>
+      </li> -->
+    </ul>
+    <div class="abs ">
+      <div class="abs " id="msgScroll"></div>
+    </div>
+  </div>
+  <div class="user-chart abs " id="userChart">
+    <textarea class="abs " id="text"></textarea>
+    <a href="javascript:; " class="abs " id="send" target="_blank" rel="external">发送</a>
+  </div>
+  <div class="user-list abs " id="userList">
+    <ul class="abs ">
+      <!-- <li class="rel">
+        <img src="img/' + arr[i].face + '.jpg"><span class="abs">' + arr[i].username + '</span>
+      </li> -->
+    </ul>
+    <div class="abs ">
+      <div class="abs " id="userScroll"></div>
+    </div>
+  </div>
+  <div class=" chart-bottom abs " id="chartBottom"></div>
+</div>
+</body>
+</html>
+
+        
+      </div>
+      
+      
+      
+    </div>
+    
+    
+    
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.png"
+               alt="Line" />
+          <p class="site-author-name" itemprop="name">Line</p>
+           
+              <p class="site-description motion-element" itemprop="description">追求卓越方能获得成功</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/FE-runner" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                    
+                      GitHub
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/FE-runner" target="_blank" title="zhihu">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      zhihu
+                    
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">模拟QQ</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2017 - 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Line</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Gemini
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  
+    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://fe-runner.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/html/02-js+ajax/00-QQ-jsonp/workmodule.html';
+          this.page.identifier = 'html/02-js+ajax/00-QQ-jsonp/workmodule.html';
+          this.page.title = '';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://fe-runner.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+/*头部*/
+.list {
+  box-sizing: border-box;
+  border-top: 1px #ebebeb solid;
+  border-bottom: 1px #ebebeb solid;
+  font-size: 0.75rem;
+  height: 2rem;
+  line-height: 2rem;
+  margin: 0 0.4rem;
+  width: 15.2rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.title {
+  border-bottom: 1px #ebebeb solid;
+  background-color: #fafafa;
+  font-size: 0.75rem;
+  height: 2rem;
+  line-height: 2rem;
+  width: 16rem;
+  padding: 0rem 0.4rem;
+  box-sizing: border-box;
+}
+.lip {
+  width: 100%;
+  height: 0.1rem;
+  background-color: #49caac;
+}
+.borderb {
+  border-bottom: 2px #ebebeb solid;
+}
+.bordert {
+  border-top: 2px #ebebeb solid;
+}
+.bl {
+  border-left: 1px #ebebeb solid;
+}
+.br {
+  border-right: 1px #ebebeb solid;
+}
+.nbt {
+  border-top: 0;
+}
+.nbb {
+  border-bottom: 0;
+}
+.nbtb {
+  border-top: 0;
+  border-bottom: 0;
+}
+#wrap header {
+  width: 100%;
+  height: 2.25rem;
+  background: #262626;
+}
+#wrap header menu,
+#wrap header h3 {
+  width: 2rem;
+  height: 2.25rem;
+}
+#wrap header menu {
+  background: url(../img/menu.jpg);
+  background-size: cover;
+}
+#wrap header h3 {
+  background: url(../img/pc.jpg);
+  background-size: cover;
+}
+#wrap header div {
+  width: 12rem;
+  color: #fff;
+  text-align: center;
+  line-height: 2.25rem;
+  font-size: 1.1rem;
+}
+#wrap header menu,
+#wrap header div,
+#wrap header h3 {
+  float: left;
+}
+.bimg {
+  height: 7.75rem;
+  margin: 0;
+  width: 100%;
+}
+.bimg img {
+  width: 100%;
+}
+.pic1 {
+  width: 1.5rem;
+  top: 0.25rem;
+  right: 0.75rem;
+}
+.little-title {
+  display: inline-block;
+  height: 100%;
+  padding: 0 0.8rem;
+  box-sizing: border-box;
+}
+.little-title1 {
+  border-bottom: 2px solid #d43553;
+}
+.title1 {
+  margin-left: -0.8rem;
+}
+.list-pic {
+  height: 6.5rem;
+}
+.list-pic .pic-title {
+  text-align: center;
+  font-weight: normal;
+  font-style: normal;
+}
+.list-pic img {
+  width: 5.2rem;
+}
+.list-pic .rile {
+  color: #8b8a8f;
+  width: 9.4rem;
+  height: 3.5rem;
+  font-size: 0.6rem;
+  line-height: 1.2rem;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: normal;
+  overflow: hidden;
+}
+.gotop {
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  color: #c7cbce;
+}
+.gotop img {
+  width: 1.5rem;
+  vertical-align: middle;
+}
+.go {
+  box-sizing: border-box;
+  width: 7.6rem;
+  text-align: center;
+  color: #c7cbce;
+}
+.go img {
+  width: 1.5rem;
+  vertical-align: middle;
+}
+.footer {
+  height: 3rem;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.8rem 0 0 0;
+  background: #262626;
+}
+.footer .go1 {
+   font-size: 0.75rem;
+  box-sizing: border-box;
+  width: 7.6rem;
+  text-align: center;
+  color: #c7cbce;
+}
+.footer .go1 img {
+  width: 1.5rem;
+  vertical-align: middle;
+}
+.footer .go2 {
+   font-size: 0.75rem;
+  box-sizing: border-box;
+  width: 7.6rem;
+  text-align: center;
+  color: #c7cbce;
+}
+.footer .go2 img {
+  width: 0.675rem;
+  vertical-align: middle;
+}

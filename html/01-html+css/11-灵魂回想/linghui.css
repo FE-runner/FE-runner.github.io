@@ -1,0 +1,1192 @@
+.Header
+{
+    height: 50px;
+
+    background: #f8f7f7;
+}
+.HeaderMid
+{
+    width: 1000px;
+    margin: 0 auto;
+}
+.HeaderMidList-leftbtn
+{
+    display: block;
+
+    width: 115px;
+    height: 36px ;
+    margin: 7px 0;
+
+    border-right: 1px #ccc solid;
+    background: url(img/logo_white.png) no-repeat 0 -7px;
+}
+.HeaderMidList-rightbtn
+{
+    font-weight: bold;
+
+    display: block;
+
+    height: 12px;
+    padding: 19px 27px;
+
+    border-left: 1px #ccc solid;
+}
+.HeaderMidList-rightbtn-pic
+{
+    top: 22px;
+    right: 12px;
+
+    width: 12px;
+    height: 12px;
+
+    background: url(img/cyou_sprite.png) no-repeat -205px -147px;
+}
+.HeaderMidList-midbtn
+{
+    font-weight: bold;
+
+    display: block;
+
+    height: 12px;
+    padding: 19px 10px 19px 40px;
+}
+.HeaderMidList-midbtn-pic1
+{
+    top: 12px;
+    left: 12px;
+
+    width: 24px;
+    height: 24px;
+
+    background: url(img/cyou_sprite.png) no-repeat 0 -104px;
+}
+.HeaderMidList-midbtn-pic2
+{
+    top: 12px;
+    left: 12px;
+
+    width: 24px;
+    height: 24px;
+
+    background: url(img/cyou_sprite.png) no-repeat -189px 0;
+}
+.HeaderMidList-midbtn-pic3
+{
+    top: 12px;
+    left: 12px;
+
+    width: 24px;
+    height: 24px;
+
+    background: url(img/cyou_sprite.png) no-repeat -139px 0;
+}
+.Headerbottom
+{
+    height: 5px;
+
+    background: url(img/5.jpg);
+}
+.Main
+{
+    height: 2550px;
+    margin: 0 auto;
+
+    background: url(img/con_bg.jpg)no-repeat center top #1b1924;
+}
+.MainMid
+{
+    width: 1000px;
+    margin: 0 auto;
+
+    background: #1b1924;
+}
+.MainMidNav
+{
+    width: 1000px;
+    height: 550px;
+
+    background: url(img/header_main.jpg) no-repeat center top;
+}
+.NavShow
+{
+    font-size: 16px;
+
+    display: block;
+
+    height: 120px;
+    padding: 38px 10px 0 10px;
+
+    text-align: center;
+
+    color: #bebebe;
+}
+.NavShow-en
+{
+    font-size: 4px;
+
+    padding-top: 4px;
+
+    text-align: center;
+
+    color: #bebebe;
+}
+.NavHidden
+{
+    top: 0;
+    left: 50% ;
+
+    display: none;
+
+    width: 86px;
+    height: 110px;
+    margin-left: -43px;
+
+    background: url(img/nav_new_hover.jpg);
+}
+.MainMidNavList:hover .NavShow + .NavHidden
+{
+    display: block;
+
+    text-align: center;
+}
+.NavHidden-1
+{
+    font-size: 12px;
+
+    display: block;
+
+    padding-top: 40px;
+
+    color: #bebebe;
+}
+.NavHidden-2
+{
+    font-size: 12px;
+
+    display: block;
+
+    padding-top: 10px;
+
+    color: #bebebe;
+}
+.NavHidden-1:hover
+{
+    text-decoration: underline;
+
+    color: yellow;
+}
+.NavHidden-2:hover
+{
+    text-decoration: underline;
+
+    color: yellow;
+}
+.NavPic
+{
+    display: block;
+
+    width: 190px;
+    height: 100px;
+
+    background: url(img/logo.gif) no-repeat left center;
+}
+.leftbtn
+{
+    top: 40%;
+    left: 0;
+
+    width: 35px;
+    height: 122px;
+
+    background: url(img/dianzan.png);
+}
+.DownloadLeft-1
+{
+    display: block;
+
+    width: 215px;
+    height: 110px;
+
+    background: url(img/sprite.jpg) no-repeat 0 0;
+}
+.DownloadLeft-1:hover
+{
+    background: url(img/sprite.jpg) no-repeat 0 -110px;
+}
+.DownloadLeft-2
+{
+    display: block;
+
+    width: 100px;
+    height: 110px;
+
+    background: url(img/sprite.jpg) no-repeat -215px 0;
+}
+.DownloadLeft-2:hover
+{
+    background: url(img/sprite.jpg) no-repeat -215px -110px;
+}
+.DownloadLeft-3
+{
+    display: block;
+
+    width: 100px;
+    height: 110px;
+
+    background: url(img/sprite.jpg) no-repeat -315px 0;
+}
+.DownloadLeft-3:hover
+{
+    background: url(img/sprite.jpg) no-repeat -315px -110px;
+}
+.DownloadLeft-4
+{
+    display: block;
+
+    width: 100px;
+    height: 110px;
+
+    background: url(img/sprite.jpg) no-repeat -415px 0;
+}
+.DownloadLeft-4:hover
+{
+    background: url(img/sprite.jpg) no-repeat -415px -110px;
+}
+.DownloadLeft-5
+{
+    display: block;
+
+    width: 100px;
+    height: 110px;
+
+    background: url(img/sprite.jpg) no-repeat -515px 0;
+}
+.DownloadLeft-5:hover
+{
+    background: url(img/sprite.jpg) no-repeat -515px -110px;
+}
+.DownloadRight-top
+{
+    width: 361px;
+    height: 55px;
+    margin: 6px 0 6px 21px;
+
+    background: url(img/sever.png) no-repeat;
+}
+.DownloadRight-top-1
+{
+    display: block;
+
+    padding: 10px 0 0 85px;
+
+    color: #9ca7ca;
+}
+.DownloadRight-bottom
+{
+    width: 381px;
+    height: 43px;
+
+    background: url(img/sprite.jpg) no-repeat 0 -220px;
+}
+.DownloadRight-bottom-left
+{
+    padding: 13px 0 13px 10px;
+
+    color: #9ca7ca;
+}
+.News
+{
+    width: 1000px;
+    height: 303px;
+}
+.NewsPic
+{
+    width: 616px;
+    height: 303px;
+}
+.NewsPicBtn1
+{
+    z-index: 10;
+    top: 280px;
+    left: 515px;
+
+    width: 12px;
+    height: 12px;
+
+    border-radius: 6px;
+    background: red;
+}
+.NewsPic1
+{
+    display: none;
+}
+.NewsPicBtn1:hover + .NewsPic1
+{
+    display: block;
+}
+.NewsPicBtn1:hover
+{
+    background: black;
+}
+.NewsPic1:hover
+{
+    display: block;
+}
+.NewsPicBtn2
+{
+    z-index: 10;
+    top: 280px;
+    left: 531px;
+
+    width: 12px;
+    height: 12px;
+
+    border-radius: 6px;
+    background: red;
+}
+.NewsPic2
+{
+    display: none;
+}
+.NewsPicBtn2:hover + .NewsPic2
+{
+    display: block;
+}
+.NewsPicBtn2:hover
+{
+    background: black;
+}
+.NewsPic2:hover
+{
+    display: block;
+}
+.NewsPicBtn3
+{
+    z-index: 10;
+    top: 280px;
+    left: 546px;
+
+    width: 12px;
+    height: 12px;
+
+    border-radius: 6px;
+    background: red;
+}
+.NewsPic3
+{
+    display: none;
+}
+.NewsPicBtn3:hover + .NewsPic3
+{
+    display: block;
+}
+.NewsPicBtn3:hover
+{
+    background: black;
+}
+.NewsPic3:hover
+{
+    display: block;
+}
+.NewsPicBtn4
+{
+    z-index: 10;
+    top: 280px;
+    left: 561px;
+
+    width: 12px;
+    height: 12px;
+
+    border-radius: 6px;
+    background: red;
+}
+.NewsPic4
+{
+    display: none;
+}
+.NewsPicBtn4:hover + .NewsPic4
+{
+    display: block;
+}
+.NewsPicBtn4:hover
+{
+    background: black;
+}
+.NewsPic4:hover
+{
+    display: block;
+}
+.NewsPicBtn5
+{
+    z-index: 10;
+    top: 280px;
+    left: 577px;
+
+    width: 12px;
+    height: 12px;
+
+    border-radius: 6px;
+    background: red;
+}
+.NewsPic5
+{
+    display: none;
+}
+.NewsPicBtn5:hover + .NewsPic5
+{
+    display: block;
+}
+.NewsPicBtn5:hover
+{
+    background: black;
+}
+.NewsPic5:hover
+{
+    display: block;
+}
+.NewsRight
+{
+    width: 384px;
+    height: 303px;
+}
+.NewsHead
+{
+    font-size: 14px;
+    line-height: 55px;
+
+    width: 95px;
+    height: 55px;
+
+    text-align: center;
+
+    color: #fff;
+    background: url(img/sprite.jpg) no-repeat 0 -263px;
+}
+.NewsHead:hover
+{
+    background: url(img/sprite.jpg) no-repeat 0 -320px;
+}
+.NewsBody-top
+{
+    display: block;
+
+    width: 384px;
+    height: 22px;
+    padding: 26px 0 0 0;
+
+    text-align: center;
+
+    color: red;
+    background: url(img2/Pic_079.png) no-repeat center bottom;
+}
+.NewsBody-bottom
+{
+    padding: 12px 20px 0 24px;
+}
+.NewsBody-bottom-1
+{
+    display: block;
+
+    padding-bottom: 14px;
+}
+.NewsBody-bottom-1-left,
+.NewsBody-bottom-1-right
+{
+    font-size: 14px;
+
+    color: #9ca7ca;
+}
+.Fuli
+{
+    border: 0;
+}
+.Fuli1
+{
+    border-top: 30px solid #1b1924;
+    border-right: 8px solid #1b1924;
+    border-bottom: 30px solid #1b1924;
+    border-left: 0 solid #1b1924;
+}
+.Fuli2
+{
+    border-top: 30px solid #1b1924;
+    border-right: 0  solid #1b1924;
+    border-bottom: 30px solid #1b1924;
+    border-left: 0 solid #1b1924;
+}
+.Fuli1:hover
+{
+    opacity: .8;
+
+    filter: alpha(opacity=80);
+}
+.Fuli2:hover
+{
+    opacity: .8;
+
+    filter: alpha(opacity=80);
+}
+
+.WorkAndActivity
+{
+    width: 1000px;
+    height: 350px;
+    padding-bottom: 30px;
+}
+.Work
+{
+    width: 654px;
+    height: 348px;
+
+    border: 1px #433b4a solid;
+}
+.WorkPic0
+{
+    top: 60px;
+    left: 0;
+}
+
+.WorkPicBtn1
+{
+    width: 109px;
+    height: 60px;
+
+    background: url(img/sprite.jpg) no-repeat 0 -414px;
+}
+.WorkPic1
+{
+    top: 60px;
+    left: 0;
+
+    display: none;
+}
+.WorkPicBtn1:hover .WorkPic1
+{
+    display: block;
+}
+.WorkPicBtn1:hover
+{
+    background: url(img/sprite.jpg) no-repeat 0 -471px;
+}
+.WorkPic1:hover
+{
+    display: block;
+}
+
+.WorkPicBtn2
+{
+    width: 109px;
+    height: 60px;
+
+    background: url(img/sprite.jpg) no-repeat -109px -414px;
+}
+.WorkPic2
+{
+    top: 60px;
+    left: 0;
+
+    display: none;
+}
+.WorkPicBtn2:hover .WorkPic2
+{
+    display: block;
+}
+.WorkPicBtn2:hover
+{
+    background: url(img/sprite.jpg) no-repeat -109px -471px;
+}
+.WorkPic2:hover
+{
+    display: block;
+}
+
+.WorkPicBtn3
+{
+    width: 109px;
+    height: 60px;
+
+    background: url(img/sprite.jpg) no-repeat -218px -414px;
+}
+.WorkPic3
+{
+    top: 60px;
+    left: 0;
+
+    display: none;
+}
+.WorkPicBtn3:hover .WorkPic3
+{
+    display: block;
+}
+.WorkPicBtn3:hover
+{
+    background: url(img/sprite.jpg) no-repeat -218px -471px;
+}
+.WorkPic3:hover
+{
+    display: block;
+}
+
+.WorkPicBtn4
+{
+    width: 109px;
+    height: 60px;
+
+    background: url(img/sprite.jpg) no-repeat -327px -414px;
+}
+.WorkPic4
+{
+    top: 60px;
+    left: 0;
+
+    display: none;
+}
+.WorkPicBtn4:hover .WorkPic4
+{
+    display: block;
+}
+.WorkPicBtn4:hover
+{
+    background: url(img/sprite.jpg) no-repeat -327px -471px;
+}
+.WorkPic4:hover
+{
+    display: block;
+}
+
+.WorkPicBtn5
+{
+    width: 109px;
+    height: 60px;
+
+    background: url(img/sprite.jpg) no-repeat -436px -414px;
+}
+.WorkPic5
+{
+    top: 60px;
+    left: 0;
+
+    display: none;
+}
+.WorkPicBtn5:hover .WorkPic5
+{
+    display: block;
+}
+.WorkPicBtn5:hover
+{
+    background: url(img/sprite.jpg) no-repeat -436px -471px;
+}
+
+.WorkPic6:hover
+{
+    display: block;
+}
+.WorkPicBtn6
+{
+    width: 109px;
+    height: 60px;
+
+    background: url(img/sprite.jpg) no-repeat -545px -414px;
+}
+.WorkPic6
+{
+    top: 60px;
+    left: 0;
+
+    display: none;
+}
+.WorkPicBtn6:hover .WorkPic6
+{
+    display: block;
+}
+.WorkPicBtn6:hover
+{
+    background: url(img/sprite.jpg) no-repeat -545px -471px;
+}
+.WorkPic6:hover
+{
+    display: block;
+}
+
+.Activity
+{
+    width: 323px;
+    height: 350px;
+    padding-left: 20px;
+}
+.ActivityHead
+{
+    font-size: 18px;
+
+    height: 45px;
+    padding-top: 9px;
+    padding-left: 42px;
+
+    color: #f9ca90;
+}
+.ActivityHead-pic
+{
+    top: 4px;
+    left: 9px;
+
+    width: 27px;
+    height: 27px;
+
+    background: url(img/sprite.jpg) no-repeat -631px -3px;
+}
+.ActivityBody
+{
+    width: 319px;
+
+    border: 1px solid #433b4a;
+}
+.opabox
+{
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+}
+.opabg
+{
+    width: 100%;
+    height: 100%;
+
+    opacity: .5;
+    background: black;
+
+    filter: alpha(opacity=50);
+}
+.opacon
+{
+    font-size: 14px;
+
+    bottom: 0;
+    left: 0;
+
+    padding: 14px 0 14px 10px;
+
+    color: white;
+}
+.ActivityBottom
+{
+    margin-top: 20px;
+}
+.ActivityBottomlist
+{
+    display: block;
+
+    width: 294px;
+    height: 19px;
+    margin-bottom: 5px;
+    padding-top: 6px;
+    padding-left: 25px ;
+
+    color: #a6b2b8;
+    border-radius: 5px;
+    background: url(img2/a1.png) no-repeat ;
+}
+.Others
+{
+    width: 1000px;
+    height: 738px;
+    padding-bottom: 30px;
+}
+.Rukou
+{
+    top: 0;
+    left: 0;
+
+    width: 215px;
+    height: 189px;
+
+    background: url(img2/Pic_060.png) no-repeat left top;
+}
+.RukouHead
+{
+    font-size: 16px;
+
+    height: 49px;
+    padding-top: 14px;
+
+    text-align: center;
+
+    color: #f9ca90;
+}
+.Rukoulist
+{
+    display: block;
+
+    padding: 0 17px 14px 24px;
+
+    color: #9587ab;
+}
+.sohu
+{
+    top: 211px;
+    left: 0 ;
+}
+.Hezuo
+{
+    font-size: 16px;
+
+    top: 475px;
+    left: 0;
+
+    width: 203px;
+    margin: 0 7px;
+    padding: 15px 0;
+
+    text-align: center;
+
+    color: #8b7e9e;
+    border-bottom: 1px solid #2f2e33;
+}
+.Hezuo-pic
+{
+    top: 20px;
+    right: 40px;
+
+    width: 6px;
+    height: 6px;
+
+    background: url(img/cyou_sprite.png) no-repeat -206px -148px;
+}
+.Xiaotiaocha
+{
+    top: 515px;
+    left: 0 ;
+}
+.Jiaoliu
+{
+    top: 0;
+    left: 234px;
+
+    width: 424px;
+    height: 348px;
+}
+.JiaoliuHead
+{
+    font-size: 18px;
+
+    height: 45px;
+    padding-top: 9px;
+    padding-left: 51px;
+
+    color: #f9ca90;
+}
+.JiaoliuHead-pic
+{
+    top: 4px;
+    left: 0;
+
+    width: 49px;
+    height: 31px;
+
+    background: url(img/sprite.jpg) no-repeat -607px -349px;
+}
+.JiaoliuList-1
+{
+    display: block;
+
+    width: 104px;
+    height: 30px;
+    padding-top: 17px;
+
+    text-align: center;
+
+    color: white;
+    border-top: 1px solid #433b4f;
+    border-left: 1px solid #433b4f;
+    background: #322b3c;
+}
+.JiaoliuList-2
+{
+    display: block;
+
+    width: 104px;
+    height: 29px;
+    padding-top: 17px;
+
+    text-align: center;
+
+    color: #a295b7;
+    border-top: 1px solid #433b4f;
+    border-bottom: 1px solid #433b4f;
+    border-left: 1px solid #433b4f;
+}
+.JiaoliuList-3
+{
+    display: block;
+
+    width: 104px;
+    height: 29px;
+    padding-top: 18px;
+
+    text-align: center;
+
+    color: #a295b7;
+    border-bottom: 1px solid #433b4f;
+    border-left: 1px solid #433b4f;
+}
+.JiaoliuCon
+{
+    width: 418px;
+    height: 256px;
+
+    border: 1px solid #433b4f;
+    border-top: 0;
+    background: #322b3c;
+}
+.JiaoliuCon-pic
+{
+    top: 25px;
+    left: 15px;
+
+    border: 1px soild #433b4f;
+}
+.JiaoliuCon-link
+{
+    top: 27px;
+    left: 139px;
+}
+.JiaoliuCon-link1
+{
+    font-size: 12px;
+
+    display: block;
+
+    padding-bottom: 14px;
+
+    color: #a295b7;
+}
+.Meiti
+{
+    top: 383px;
+    left: 234px;
+
+    width: 424px;
+    height: 348px;
+}
+.MeitiHead
+{
+    font-size: 18px;
+
+    height: 45px;
+    padding-top: 9px;
+    padding-left: 51px;
+
+    color: #f9ca90;
+}
+.MeitiHead-pic
+{
+    top: 5px;
+    left: 2px;
+
+    width: 49px;
+    height: 31px;
+
+    background: url(img/sprite.jpg) no-repeat -616px -382px;
+}
+.MeitiList-1
+{
+    display: block;
+
+    width: 104px;
+    height: 30px;
+    padding-top: 17px;
+
+    text-align: center;
+
+    color: white;
+    border-top: 1px solid #433b4f;
+    border-left: 1px solid #433b4f;
+    background: #322b3c;
+}
+.MeitiList-2
+{
+    display: block;
+
+    width: 104px;
+    height: 29px;
+    padding-top: 17px;
+
+    text-align: center;
+
+    color: #a295b7;
+    border-top: 1px solid #433b4f;
+    border-bottom: 1px solid #433b4f;
+    border-left: 1px solid #433b4f;
+}
+.MeitiList-3
+{
+    display: block;
+
+    width: 104px;
+    height: 29px;
+    padding-top: 18px;
+
+    text-align: center;
+
+    color: #a295b7;
+    border-bottom: 1px solid #433b4f;
+    border-left: 1px solid #433b4f;
+}
+.MeitiCon
+{
+    width: 418px;
+    height: 256px;
+
+    border: 1px solid #433b4f;
+    border-top: 0;
+    background: #322b3c;
+}
+.MeitiCon-pic
+{
+    top: 25px;
+    left: 15px;
+
+    border: 1px soild #433b4f;
+}
+.MeitiCon-link
+{
+    top: 27px;
+    left: 139px;
+}
+.MeitiCon-link1
+{
+    font-size: 12px;
+
+    display: block;
+
+    padding-bottom: 14px;
+
+    color: #a295b7;
+}
+
+.Ziliao
+{
+    top: 0;
+    left: 678px;
+
+    width: 322px;
+    height: 348px;
+}
+.ZiliaoHead
+{
+    font-size: 18px;
+
+    height: 45px;
+    padding-top: 9px;
+    padding-left: 51px;
+
+    color: #f9ca90;
+}
+.ZiliaoHead-pic
+{
+    top: 5px;
+    left: 2px;
+
+    width: 49px;
+    height: 31px;
+
+    background: url(img/sprite.jpg) no-repeat -629px -39px;
+}
+.ZiliaoBody{border: 1px solid #4b3f5c;height: 302px;padding: 0 16px;background: #26212d;}
+.ZiliaoBodyTop1{padding: 16px 0px;border-bottom: 1px dashed #4b3f5c;}
+.ZiliaoBodyTop2{padding: 16px 0px;}
+.ZiliaoBodyTop1-1{width: 88px;height: 26px;color: #f8f7f7;background: url(img2/Pic_047.png) no-repeat left center;display: block;line-height: 26px;padding-left: 8px;font-size: 14px;padding-right: 8px}
+.ZiliaoBodyTop1-2{height: 26px;color: #b1a1ca;display: block;line-height: 26px;font-size: 14px;}
+.ZiliaoBodyBottom{width: 279px;height: 39px;font-size: 20px;color: #baa1ca;text-align: center;display: block;line-height: 39px;border: 2px solid #4b3f5c}
+
+.Xinshang
+{
+    left: 678px;
+
+    width: 322px;
+    height: 348px;
+    top: 383px;
+
+
+}
+.XinshangHead
+{
+    font-size: 18px;
+
+    height: 45px;
+    padding-top: 9px;
+    padding-left: 51px;
+
+    color: #f9ca90;
+}
+.XinshangHead-pic
+{
+    top: 5px;
+    left: 2px;
+
+    width: 49px;
+    height: 31px;
+
+    background: url(img/sprite.jpg) no-repeat -616px -382px;
+}
+.XinshangList-1
+{
+    display: block;
+
+    width: 104px;
+    height: 30px;
+    padding-top: 17px;
+
+    text-align: center;
+
+    color: white;
+    border-top: 1px solid #433b4f;
+    border-left: 1px solid #433b4f;
+    background: #322b3c;
+}
+.XinshangList-2
+{
+    display: block;
+
+    width: 104px;
+    height: 29px;
+    padding-top: 17px;
+
+    text-align: center;
+
+    color: #a295b7;
+    border-top: 1px solid #433b4f;
+    border-bottom: 1px solid #433b4f;
+    border-left: 1px solid #433b4f;
+}
+.XinshangList-3
+{
+    display: block;
+
+    width: 111px;
+    height: 29px;
+    padding-top: 18px;
+
+    text-align: center;
+
+    color: #a295b7;
+    border-bottom: 1px solid #433b4f;
+    border-left: 1px solid #433b4f;
+}
+.XinshangCon
+{
+
+    height: 256px;
+
+    border: 1px solid #433b4f;
+    border-top: 0;
+    background: #322b3c;
+}
+
+.XinshangCon-pic{padding: 24px 10px 0 12px;}
+.FooterTop{background: url(img/game_anc.jpg) no-repeat center top;text-align: center;font-size:16px;color: #b1a1ca; line-height: 200%;padding-bottom: 30px;padding-top: 5px;}
+.MainFoot{width: 1000px; margin: 0 auto;}
+.MainFootCon{color: #b1a1ca;line-height: 24px;padding: 33px 0 0 245px;background:url(img2/a2.png) no-repeat;}
+.MainFoot-link{color: #b1a1ca;}
+
+

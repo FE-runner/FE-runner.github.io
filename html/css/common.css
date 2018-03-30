@@ -1,0 +1,138 @@
+/**
+ * Created by Liany on 2016/6/30.
+ */
+#avatar {
+  transition: 0.5s all ease;
+}
+#avatar:hover {
+  transform: rotateY(180deg);
+}
+.mymail:hover {
+  background: #4169E1 !important;
+  color: #F5F5F5;
+  border-radius: 5px;
+}
+.pro h2 a:hover {
+  background: #4169E1;
+  color: #F5F5F5;
+  border-radius: 10px;
+}
+.work {
+  transition: 0.5s all ease;
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.work p {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  font-size: 1.5em;
+  color: #f5f5f5;
+}
+.work .tab {
+  box-sizing: content-box;
+  background: rgba(0, 0, 0, 0);
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.work .work-tab .tab-list {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 46%;
+  height: 46%;
+  float: left;
+  margin: 2% 2% 2% 2%;
+  border-radius: 5%;
+  overflow: hidden;
+}
+.work .work-tab .tab-list .list-work {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  overflow: hidden;
+  background: rgba(65, 105, 225, 0.5);
+}
+.work .work-tab .tab-list .list-work img {
+  box-sizing: padding-box;
+  width: 100%;
+  height: 100%;
+  /* position: relative;*/
+  left: 0;
+  top: 0;
+}
+.work .work-tab .tab-list .list-opa {
+  width: 100%;
+  background: rgba(255, 0, 0, 0.6);
+  position: absolute;
+  left: 0;
+  top: 40%;
+  padding: 5%;
+  border-radius: 5px;
+  z-index: 999;
+  color: #F5F5F5;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  font-size: 2em;
+}
+.work .work-btn {
+  bottom: 0;
+  width: 100%;
+  height: 4%;
+}
+.work .work-btn span {
+  transition: 0.5s all ease;
+  display: inline-block;
+  position: relative;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  background: green;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.work .work-btn .active2 {
+  background: yellow;
+  border-radius: 25%;
+}
+.aboutme {
+  position: relative;
+}
+.moreme {
+  position: relative;
+}
+.moreme img {
+  position: absolute;
+  width: 15rem;
+  height: 15rem;
+  left: 50%;
+  top: 2%;
+  margin-left: -7.5rem;
+  transform: scale(0);
+}
